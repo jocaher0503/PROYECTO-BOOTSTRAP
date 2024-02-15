@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/mystyle.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-0 col-md-1 col-lg-2">
+
+            </div>
+            <div class="col-12 col-md-10 col-lg-8">
+                <!-- onsubmit es el evento hacer click en boton enviar y se invoca a la funcion
+                    validacion antes de mandar los datos al backend. Si la funcion devuelve false, el
+                    envio se paraliza.-->
+                <form action="" method="post" onsubmit="return validation()" class="m-3 p-5 border border-secondary rounded-2 mx-auto w-75">
+                    <h1>Contacta con nosotros: </h1>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre: <span class="text-danger">*</span></label>
+                        <input type="text" onchange="deleteError('nombre')" class="form-control" id="nombre" name="nombre" placeholder="obligatorio">
+                        <div id="nombreHelp" class="form-text text-danger">El nombre es obligatorio</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="apellidos" class="form-label">Apellidos: <span class="text-danger">*</span></label>
+                        <input type="text" onchange="deleteError('apellidos')"class="form-control" id="apellidos" name="apellidos" placeholder="obligatorio">
+                        <div id="apellidosHelp" class="form-text text-danger">El o los apellidos son obligatorios</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email: <span class="text-danger">*</span></label>
+                        <input type="email" onchange="deleteError('email')"class="form-control" id="email" name="email" placeholder="obligatorio">
+                        <div id="emailHelp" class="form-text text-danger">El email debe eestar ene el formato correcto</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="pass" class="form-label">Password: <span class="text-danger">*</span></label>
+                        <input type="password" onchange="deleteError('pass')"class="form-control" id="pass" name="pass" placeholder="obligatorio">
+                        <div id="passHelp" class="form-text text-danger">Entre 8 y 15 caracteres (minús., mayús., dígitos y caracteres especiales)</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="pass2" class="form-label">Repite la password: <span class="text-danger">*</span></label>
+                        <input type="password" onchange="deleteError('pass2')"class="form-control" id="pass2" name="pass2" placeholder="obligatorio">
+                        <div id="pass2Help" class="form-text text-danger">Password incorrecta o distinta a la anterior</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="provincia" class="form-label">Provincia: <span class="text-danger">*</span></label>
+                        <select class="form-select" onchange="deleteError('provincia')" aria-label="Default select example">
+                            <option selected>-- Elige provincia</option>
+                            <option value="29">Málaga</option>
+                            <option value="18">Granada</option>
+                            <option value="4">Almería</option>
+                        </select>
+                        <div id="provinciaHelp" class="form-text text-danger">La provincia es obligatoria</div>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="sexo" id="masculino" value="masculino">
+                        <label class="form-check-label" for="masculino">
+                            Masculino
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="sexo" id="femenino" value="femenino">
+                        <label class="form-check-label" for="femenino">
+                            Femenino
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="sexo" id="otro" value="otro">
+                        <label class="form-check-label" for="otro">
+                            Otro
+                        </label>
+                    </div>
+                    <div id="sexoHelp" class="form-text text-danger">Debes elegir sexo</div>
+                    <div class="form-check mt-5">
+                        <input class="form-check-input" type="checkbox" value="terminos" id="terminos">
+                        <a id="disparador" data-bs-toggle="modal" data-bs-target="#condiciones" class="text-primary fw-bold">
+                            <label class="form-check-label" for="terminos">
+                            Acepto los términos
+                            </label>
+                        </a>
+                    </div>
+                    <button class="btn btn-outline-primary mt-4 mx-auto" type="submit">Submit</button>
+                </form>
+                <!-- Modal -->
+                <div class="modal fade" id="condiciones" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora iste, nobis fugiat aspernatur deleniti esse pariatur ipsa qui? Asperiores dolor aperiam maiores mollitia doloribus quam blanditiis numquam odit ipsam eius.
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, debitis saepe sequi iure ducimus magnam minima aspernatur laudantium explicabo itaque distinctio dignissimos reprehenderit. Accusamus consequuntur iste dolorem illum omnis reprehenderit.
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia praesentium, quidem similique debitis dolorum, quam, expedita eos placeat tenetur maxime atque fugit! Amet autem doloremque ratione odio animi, accusantium corporis.
+                                Voluptatum magnam inventore quisquam fuga dicta, vero molestiae. Eveniet obcaecati molestias adipisci debitis, praesentium animi vero ducimus enim, dicta placeat maxime quia blanditiis quo sapiente eaque repellat perspiciatis, quis voluptatem!
+                                Totam, obcaecati consequuntur. Commodi beatae corporis sed animi mollitia odio. Ipsam eius iure rem sit non blanditiis repellat ab earum tenetur? Ducimus labore alias, quasi eos officia qui porro quos?
+                                Ex delectus et perferendis maxime magni culpa non! Excepturi earum cumque sed! Eligendi sapiente, doloremque omnis itaque quo recusandae repellendus debitis illum quibusdam fugit nisi! Labore dolore quam cumque aliquam?
+                                Inventore sunt quis magni omnis voluptates fuga, asperiores ullam quam voluptatum labore voluptatibus iure dicta suscipit eum qui nulla, tempora natus cumque alias neque maiores nam nihil praesentium quo! Quia.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">Understood</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-0 col-md-1 col-lg-2">
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/validacion.js"></script>
+</body>
+</html>

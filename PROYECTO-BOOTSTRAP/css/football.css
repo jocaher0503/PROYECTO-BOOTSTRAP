@@ -1,0 +1,46 @@
+/********************************************************/
+/*      stylesheet for PROJECT BOOTSTRAP                */
+/*      author: Juan Carlos Ocaña Heredia               */
+/*      version. 1.0                                    */
+/*      comment: project for Lenguaje de Marcas - 1ºDAM */
+/********************************************************/
+
+/******************** FONTS ********************/
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/******************* COLORS ********************/
+.carousel-caption {
+    --bs-bg-opacity: .5;}
+
+
+.accordion-button:not(.collapsed){
+    background-color: rgb(88, 189, 98) !important;
+}
+.accordion-button.collapsed{
+    background-color: yellow;
+}
+
+/******************* SIZES ********************/
+
+
+
+/******************* IMAGES ********************/
+#logo {
+    height: 50px;
+}
+
+#hero {
+    background-image: url(../img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/******************* OTHER FIXES ********************/ç
+
+#disparador:hover{
+    cursor: pointer;
+    opacity: 0.75;
+}
