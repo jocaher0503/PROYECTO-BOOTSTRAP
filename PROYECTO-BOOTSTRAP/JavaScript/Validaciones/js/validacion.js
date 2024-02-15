@@ -10,8 +10,6 @@ function validation(){
     let nombre=document.getElementById('nombre').value; //getter
     let apellidos=document.getElementById('apellidos').value; //getter
     let email=document.getElementById('email').value; //getter
-    let pass=document.getElementById('pass').value; //getter
-    let pass2=document.getElementById('pass2').value; //getter
     let provincia=document.getElementById('provincia').value; //getter
     let terminos=document.getElementById('terminos').value; //getter
 
@@ -33,18 +31,6 @@ function validation(){
         document.getElementById('emailHelp').style.visibility="visible";//setter
         document.getElementById('email').style.borderColor="red";//setter
         correcto = false;
-    }
-
-    if (pass.length<8 || pass.length>15 || !/[a-zñ]/.test(pass) || !/[A-ZÑ]/.test(pass) || !/[0-9]/.test(pass) || !/[^a-zA-AñÑ0-9]/.test(pass)) {
-        document.getElementById('passHelp').style.visibility = "visible"; //setter
-        document.getElementById('pass').style.borderColor = "red"; //setter
-        correcto = false
-    }
-
-    if (pass != pass2) {
-        document.getElementById('pass2Help').style.visibility = "visible"; //setter
-        document.getElementById('pass2').style.borderColor = "red"; //setter
-        correcto = false
     }
 
     if(provincia==0){
