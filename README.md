@@ -20,49 +20,48 @@
 <h2 id="estructura">Estructura</h2>
 <p>La web está dividida en  6 secciones:</p>
 <ul>
-  <li>Hero Section</li>  
-  <li>Introducción/Historia</li>
-  <li>Habilidades</li>
-  <li>Posiciones</li>
-  <li>Trofeos</li>
+  <li>Hero Section (en forma de carousel)</li>  
+  <li>Intro/History</li>
+  <li>Trophies</li>
+  <li>Skills</li>
+  <li>Positions</li>
+  <li>Contact</li>
   <li>Footer</li>
+  <li>Style/Code Snippets</li>
 </ul>
 
 <h3>Hero Section</h3>
-<img src="./MI-PROYECTO/MI PROYECTO/hero.jpg" alt="imagen de hero section" style="width:50%">
-<p>He utilizado una imagen de fondo tomada de freepik que se adapta fácilmente a diferentes dispositivos<br>
-Sobre ella he colocado un Call to Action que he estilado a partir de un button y cambiando el fondo al poner el puntero encima de él.<br></p>
+<p>He utilizado una carousel de bootstrap que se adapta fácilmente a diferentes dispositivos<br>
+Sobre el carousel he colocado unos franajas de texto indicando a lo que hace referencia cada imagen<br></p>
 
-<h3>Introducción</h3>
-<img src="./MI-PROYECTO/MI PROYECTO/historia.jpg" alt="imagen de intro section" style="width:50%">
-<p>He dispuesto en un grid de 2 columnas: Una parte de texto explicando cual es la historia de este deporte, junto con un call to action de "read more" y también he colocado una imagen de como se jugaba al empezar el descubrimiento de este deporte</p>
-
-<h3>Skills</h3>
-<p>En esta section, he dispuesto en un grid de 2 columnas: con videos de youtube explicando cuales y como son las habilidades más importantes en el fútbol</p>
-
-<h3>Positions</h3>
-<p>He dispuesto en un grid de 4 columnas: He cogido 4 imagenes de freepik simbolizando lo que se hace en cada posición del campo a la hora de jugar, y al hacer clic encima o solamente poniendo el puntero encima aparece debajo de la imagen la posición que es.</p>
+<h3>Intro/History</h3>
+<p>He dispuesto en un grid de 2 columnas formado con bootstrap: Una parte de texto explicando cual es la historia de este deporte, junto con un call to action de "read more" y también he colocado una imagen de como se jugaba al empezar el descubrimiento de este deporte</p>
 
 <h3>Trophies</h3>
-<p>He dispuesto en un grid de 3 columnas, en la que se encuentra 6 de los trofeos más importantes de deporte, que al hacer clic encima o solamente poniendo el puntero encima, se giran y muestra una breve explicación de ese trofeo en cuestión.</p>
+<p>En esta section, he dispuesto de un grid de 6: con cards de cada uno de los trofeos mas importantes del mundo y seguido de la imagen una breve explicacion de cada uno.</p>
+
+<h3>Skills</h3>
+<p>He dispuesto de un accordion hecho con bootstrap en el que aprecen varias preguntas de como mejorar como jugador, y haciendo click sobre ellas aprece un video en el que puedes ver a profesionales de este deporte(fútbol) como te enseñan a mejorar con futbolista.</p>
+
+<h3>Positions</h3>
+<p>He dispuesto de un grid de 2 columnas, en el que aparecen las distintas posiciones que hay en el fútbol dentro de un terreno de juego.</p>
+
+<h3>Contact</h3>
+<p>En esta section hay un grid de 2 columnas en el que a la izquierda aparece un mapa de nuestra ubicación, y a la derecha un formulario de contacto por si existe algún tipo de duda o problema.</p>
 
 <h3>Footer</h3>
-<p>En este section, hay una list, que dispone de las redes sociales de la página, unos atajos que te llevan a: la página principal de home "Home", otro a los contactos "About us" y una última con la politicas de privacidad "Privacy Politic" y por última al final de la página aparece el copyright co el nombre del creador que este caso soy yo mismo.</p>
+<p>En este section, hay un grid de 3 columnas, que dispone de las redes sociales de la página, unos atajos que te llevan a las diferentes sections de la web. Por último al final de la página aparece el copyright con el nombre de la empresa (FOOTBALL), junto a nuestras redes sociales.</p>
 
-<h2 id="estilo">Estilo de la página</h2>
-<h3>Paleta de colores</h3>
+<h3>LICENCIA CC-BY</h3>
+
+<h2>Style de la página sacado de bootstrap</h2>
+<h4>Paleta de colores</h4>
 <p>He escogido una paleta de colores de distintos tonos de verde, ya que el terreno de juego de este deporte es verde, y de esta manera el usuario se familiariza más con la página.</p>
-<h3>Tipografías</h3>
-<p>Todas estas fuentes son de 1001fonts:<br>Pop Warner.ttf<br>Soccer team.otf<br>Ubuntu-B.ttf</p>
-<h3>Imágenes</h3>
+<h4>Tipografías</h4>
+<p>Las fuentes para esta web han sido: Arial, Helvetica, sans-serif</p>
+<h4>Imágenes</h4>
 <p>Han sido todas cogidas de freepik</p>
-<h3>Videos</h3>
+<h4>Videos</h4>
 <p>Todos cogidos de youtube, del canal de futbol emotion</p>
-<h2 id="snippets">Code snippets</h2>
-<p>He utilizado los siguientes:</p>
-<ul>
-  <li>Barra de navegación: tomada de w3Schools "How to" url()</li>
-  <li>Smooth scroll: tomada de w3Schools "How to" url(https://www.w3schools.com/howto/howto_css_smooth_scroll.asp)</li>
-  <li>Imagenes: tomada de w3Schools "How to" url(https://www.w3schools.com/howto/howto_css_image_overlay_title.asp)</li>
-  <li>Efectos de cards: tomada de w3Schools "How to" url(https://www.w3schools.com/howto/howto_css_flip_card.asp)</li>
-</ul>
+<h2>Code snippets</h2>
+<p>Todos los snippets que he utilizado han sido sacados de bootstrap utilizando cada una de sus reglas de estilado.</p>
