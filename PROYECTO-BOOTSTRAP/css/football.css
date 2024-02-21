@@ -50,10 +50,15 @@ p{
     font-size: 17px;
 }
 
-a:hover{
-    color: green !important;
+#twitter:hover{
+    color: rgb(64, 177, 221) !important;
 }
-
+#facebook:hover{
+    color: #3b5998 !important;
+}
+#instagram:hover{
+    color: palevioletred !important;
+}
 i{
     font-size: 25px;
 }
